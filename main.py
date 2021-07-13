@@ -29,7 +29,6 @@ lines = []
 with open("juni_profiles.txt") as f:
     lines = f.readlines()
 
-URL="https://app.junilearning.com/juniverse/users/taaha_khan"
 browser = webdriver.Firefox()
 for line in lines:
     browser.get(line.strip())
